@@ -1,0 +1,38 @@
+﻿<Window x:Class="LolLookup.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LolLookup"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}" WindowStartupLocation="CenterScreen" 
+        Title="Window1" Height="720" Width="830">
+    <Grid>
+        <materialDesign:Card Height="124" Margin="10,10,0,0" HorizontalAlignment="Left" Width="584">
+            <Grid>
+                <Image x:Name="profileIconImage" Margin="10,10,0,0" Height="99" VerticalAlignment="Top" HorizontalAlignment="Left" Width="98"></Image>
+                <TextBlock x:Name="SummonerNameLabel" Margin="113,10,0,0" TextAlignment="Left" VerticalAlignment="Top" FontSize="26" FontWeight="Medium" Foreground="#DD000000" HorizontalAlignment="Left" Width="199"><Run Text="nickname"/><LineBreak/><Run Text="Level 100"/></TextBlock>
+                <Image x:Name="rankedFlexSRImage" Margin="334,13,0,0" Height="64" VerticalAlignment="Top" HorizontalAlignment="Left" Width="64"></Image>
+                <TextBlock x:Name="rankedFlexSRText" TextAlignment="Center" Width="64" VerticalAlignment="Top" FontSize="12" FontWeight="Medium" Foreground="#DD000000" Margin="335,80,0,0" HorizontalAlignment="Left">{0}<LineBreak/>SR Flex</TextBlock>
+                <Image x:Name="rankedSoloDuoSRImage" Margin="418,13,0,0" Height="64" VerticalAlignment="Top" HorizontalAlignment="Left" Width="64"/>
+                <TextBlock x:Name="rankedSoloDuoSRText" TextAlignment="Center" Width="64" VerticalAlignment="Top" FontSize="12" FontWeight="Medium" Foreground="#DD000000" Margin="418,80,0,0" HorizontalAlignment="Left">{0}<LineBreak/>SR SoloQ</TextBlock>
+                <Image x:Name="rankedFlexTTImage" Margin="502,13,0,0" Height="64" VerticalAlignment="Top" HorizontalAlignment="Left" Width="64"></Image>
+                <TextBlock x:Name="rankedFlexTTText" TextAlignment="Center" Width="64" VerticalAlignment="Top" FontSize="12" FontWeight="Medium" Foreground="#DD000000" Margin="502,80,0,0" HorizontalAlignment="Left">{0}<LineBreak/>TT Flex</TextBlock>
+            </Grid>
+        </materialDesign:Card>
+        <materialDesign:Card Height="310" Margin="10,139,0,0" HorizontalAlignment="Left" Width="584">
+
+        </materialDesign:Card>
+        <materialDesign:Card Height="60" Margin="599,10,0,0" HorizontalAlignment="Left" Width="213">
+            <TextBox Margin="10,10,41,24" AcceptsTab="False" materialDesign:HintAssist.Hint="Pesquisar Usuário(TO DO)"></TextBox>
+
+        </materialDesign:Card>
+    </Grid>
+</Window>

@@ -1,0 +1,42 @@
+﻿<Window x:Class="LolLookup.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LolLookup"
+        mc:Ignorable="d"
+        Title="Lol Lookup - Login" Height="609.167" Width="728.889"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid>
+
+        <Image Source="pack://application:,,/Resources/bg.jpg" Stretch="UniformToFill" Margin="-40,-20,-20,-20" >
+            <Image.Effect>
+                <BlurEffect RenderingBias="Quality" Radius="30"/>
+            </Image.Effect>
+            
+        </Image>
+        <materialDesign:Card Height="480" Width="440" VerticalAlignment="Center" HorizontalAlignment="Center" >
+            <Grid>
+                <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Height="45" FontSize="36" Width="156" Margin="137,88,137,347" RenderTransformOrigin="0.5,0.5">
+    Login</TextBlock>
+                <TextBox
+                    x:Name="UserBox"
+                    materialDesign:HintAssist.Hint="Usuário"
+                    Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="45,138,46,297" />
+                <PasswordBox
+                    x:Name="PwBox"
+                    materialDesign:HintAssist.Hint="Senha"
+                    Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="45,188,46,254" />
+                <Button Margin="45,249,46,187" Height="Auto" Click="Button_Click">Entrar</Button>
+                <TextBlock HorizontalAlignment="Center" TextAlignment="Center" TextDecorations="Underline"  Width="349" Margin="45,307,46,137" Foreground="#DD707070">Não tem uma conta? Registre-se</TextBlock>
+            </Grid>
+        </materialDesign:Card>
+    </Grid>
+</Window>
