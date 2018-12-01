@@ -27,12 +27,12 @@
                 <TextBlock x:Name="rankedFlexTTText" TextAlignment="Center" Width="64" VerticalAlignment="Top" FontSize="12" FontWeight="Medium" Foreground="#DD000000" Margin="502,80,0,0" HorizontalAlignment="Left">{0}<LineBreak/>TT Flex</TextBlock>
             </Grid>
         </materialDesign:Card>
-        <materialDesign:Card Height="310" Margin="10,139,0,0" HorizontalAlignment="Left" Width="584">
-
+        <materialDesign:Card Height="425" Margin="10,139,0,0" HorizontalAlignment="Left" Width="584">
+            <StackPanel>
+            </StackPanel>
         </materialDesign:Card>
         <materialDesign:Card Height="60" Margin="599,10,0,0" HorizontalAlignment="Left" Width="213">
             <TextBox Margin="10,10,41,24" AcceptsTab="False" materialDesign:HintAssist.Hint="Pesquisar Usuário(TO DO)"></TextBox>
-
         </materialDesign:Card>
     </Grid>
 </Window>
