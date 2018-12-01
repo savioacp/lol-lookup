@@ -13,7 +13,7 @@
         TextOptions.TextRenderingMode="Auto"
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}" WindowStartupLocation="CenterScreen" 
-        Title="Window1" Height="720" Width="830">
+        Title="Window1" Height="720" Width="830" Loaded="Window_Loaded">
     <Grid>
         <materialDesign:Card Height="124" Margin="10,10,0,0" HorizontalAlignment="Left" Width="584">
             <Grid>
